@@ -1,0 +1,295 @@
+<section class="cost">
+  <div class="container">
+    <div class="cost__wrapper">
+      <div class="cost__left">
+        <h1 class="cost__title">Рассчитать стоимость перевозки</h1>
+        <p class="cost__text">
+          Калькулятор автоматически рассчитывает стоимость, исходя из тарифов за
+          км, которые обычно действуют в нашей транспортной компании.
+        </p>
+
+        <div class="categories">
+          <ul class="categories__list">
+            <li class="categories__item">
+              <a class="categories__link" href="#">
+                Авто перевозки
+
+                <svg>
+                  <use xlink:href="img/sprite.svg#chevron"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="categories__item">
+              <a class="categories__link" href="#">
+                Сборные грузоперевозки
+
+                <svg>
+                  <use xlink:href="img/sprite.svg#chevron"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="categories__item">
+              <a class="categories__link" href="#">
+                Квартирные, офисные и домашние переезды
+
+                <svg>
+                  <use xlink:href="img/sprite.svg#chevron"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="categories__item">
+              <a class="categories__link" href="#">
+                Hефрижераторные перевозки
+
+                <svg>
+                  <use xlink:href="img/sprite.svg#chevron"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="categories__item">
+              <a class="categories__link" href="#">
+                Авиа перевозки
+                <svg>
+                  <use xlink:href="img/sprite.svg#chevron"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="categories__item">
+              <a class="categories__link" href="#">
+                Международные перевозки
+                <svg>
+                  <use xlink:href="img/sprite.svg#chevron"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="categories__item">
+              <a class="categories__link" href="#">
+                Негабаритные перевозки
+                <svg>
+                  <use xlink:href="img/sprite.svg#chevron"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="categories__item">
+              <a class="categories__link" href="#">
+                Аренда спецтехники
+                <svg>
+                  <use xlink:href="img/sprite.svg#chevron"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <form class="cost__form form-cost">
+        <div class="form-cost__inner">
+          <div class="form-cost__group">
+            <label class="form-cost__label"> Маршрут: </label>
+            <div class="form-cost__inputs">
+              <div class="form-cost__input-wrap">
+                <svg class="form-cost__icon">
+                  <use xlink:href="img/sprite.svg#location"></use>
+                </svg>
+                <input
+                  class="form-cost__input form-cost__input--pl"
+                  type="text"
+                  placeholder="Откуда"
+                />
+              </div>
+              <div class="form-cost__input-wrap">
+                <svg class="form-cost__icon">
+                  <use xlink:href="img/sprite.svg#location"></use>
+                </svg>
+                <input
+                  class="form-cost__input form-cost__input--pl"
+                  type="text"
+                  placeholder="Куда"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="form-cost__group">
+            <label class="form-cost__label"> Размер груза:</label>
+            <div class="form-cost__inputs form-cost__inputs--sizes">
+              <div class="form-cost__input-wrap">
+                <label class="form-cost__label">Длина</label>
+                <input
+                  class="form-cost__input"
+                  type="text"
+                  placeholder="0.0 м"
+                />
+              </div>
+              <div class="form-cost__input-wrap">
+                <label class="form-cost__label">Ширина</label>
+                <input
+                  class="form-cost__input"
+                  type="text"
+                  placeholder="0.0 м"
+                />
+              </div>
+              <div class="form-cost__input-wrap">
+                <label class="form-cost__label">Высота</label>
+                <input
+                  class="form-cost__input"
+                  type="text"
+                  placeholder="0.0 м"
+                />
+              </div>
+              <div class="form-cost__input-wrap">
+                <label class="form-cost__label">Объём (м3)</label>
+                <input
+                  class="form-cost__input"
+                  type="text"
+                  placeholder="0.0 м3"
+                />
+              </div>
+              <div class="form-cost__input-wrap">
+                <label class="form-cost__label">Вес (кг)</label>
+                <input
+                  class="form-cost__input"
+                  type="text"
+                  placeholder="≥180 кг"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="form-cost__group">
+            <label class="form-cost__label">Груз и способобы перевозки:</label>
+            <div class="form-cost__inputs form-cost__inputs--selects">
+              <div class="form-cost__input-wrap">
+                <select class="form-cost__select">
+                  <option value="">Характери груза</option>
+                  <option value="1">Характери груза</option>
+                  <option value="2">Характери груза</option>
+                  <option value="3">Характери груза</option>
+                </select>
+              </div>
+              <div class="form-cost__input-wrap">
+                <select class="form-cost__select">
+                  <option value="">Способ погрузки</option>
+                  <option value="1">Способ погрузки</option>
+                  <option value="2">Способ погрузки</option>
+                  <option value="3">Способ погрузки</option>
+                </select>
+              </div>
+              <div class="form-cost__input-wrap">
+                <select class="form-cost__select">
+                  <option value="">Способ перевозки</option>
+                  <option value="1">Способ перевозки</option>
+                  <option value="2">Способ перевозки</option>
+                  <option value="3">Способ перевозки</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="form-cost__group">
+            <label class="form-cost__label">Дополнительные комментарии</label>
+            <div class="form-cost__inputs form-cost__inputs--selects">
+              <textarea
+                class="form-cost__input form-cost__input--big"
+                placeholder="Введите дополнительные комментарии"
+              ></textarea>
+            </div>
+          </div>
+          <div class="form-cost__group">
+            <label class="form-cost__label">Контактные данные:</label>
+            <div class="form-cost__inputs form-cost__inputs--selects">
+              <div class="form-cost__input-wrap">
+                <input
+                  class="form-cost__input"
+                  type="tel"
+                  placeholder="Контактный телефон"
+                />
+              </div>
+              <div class="form-cost__input-wrap">
+                <input class="form-cost__input" type="text" placeholder="Имя" />
+              </div>
+              <div class="form-cost__input-wrap">
+                <input
+                  class="form-cost__input"
+                  type="email"
+                  placeholder="Контактный e-mail"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="form-cost__group">
+            <label class="form-cost__label">Выберите дату</label>
+            <div class="form-cost__inputs form-cost__inputs--selects">
+              <div class="form-cost__input-wrap">
+                <input
+                  class="form-cost__input form-cost__input--pl form-cost__input--date"
+                  type="date"
+                />
+              </div>
+              <label class="checkbox">
+                <input class="checkbox__input" type="checkbox" required />
+                <span class="checkbox__box"></span>
+                <span class="checkbox__text">
+                  Я принимаю <a href="#">пользовательское соглашение</a> и
+                  подтверждаю, что ознакомлен и согласен с
+                  <a href="#">политикой конфиденциальности</a> данного сайта
+                </span>
+              </label>
+            </div>
+          </div>
+
+          <button class="form-cost__btn btn" type="submit">
+            ЗАКАЗАТЬ ПОДРОБНЫЙ РАСЧЕТ
+          </button>
+        </div>
+      </form>
+
+      <ul class="cost__right">
+        <li class="cost-item">
+          <div class="cost-item__top">
+            <img src="img/cost-icons/1.png" alt="img" />
+            <b>АДРЕСНАЯ ДОСТАВКА</b>
+          </div>
+          <p class="cost-item__text">
+            Доставка до адреса получателя с уточнением удобного для него времени
+          </p>
+        </li>
+        <li class="cost-item">
+          <div class="cost-item__top">
+            <img src="img/cost-icons/2.png" alt="img" />
+            <b>
+              ОПЛАТА <br />
+              В ОДИН КОНЕЦ
+            </b>
+          </div>
+          <p class="cost-item__text">
+            Вы оплачиваете стоимость перевозки в один конец, не платите за
+            обратную дорогу
+          </p>
+        </li>
+        <li class="cost-item">
+          <div class="cost-item__top">
+            <img src="img/cost-icons/3.png" alt="img" />
+            <b>
+              ДОСТАВКА ГРУЗА <br />
+              ТОЧНО В СРОк
+            </b>
+          </div>
+          <p class="cost-item__text">
+            Мы гарантируем качественную доставку груза точно в указанный срок
+          </p>
+        </li>
+        <li class="cost-item">
+          <div class="cost-item__top">
+            <img src="img/cost-icons/4.png" alt="img" />
+            <b>
+              РАБОТАЕМ 24/7 <br />
+              БЕЗ ВЫХОДНЫХ
+            </b>
+          </div>
+          <p class="cost-item__text">
+            Обращайтесь в любое время по телефону или на почтовый адрес и мы
+            ответим вам
+          </p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,1938 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+
+<!-- Link Swiper's CSS -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+<!-- nouislider -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.0/nouislider.min.css"
+/>
+
+<!-- Choices JS  -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css"
+/>
+
+<!-- fancybox -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"
+/>
+
+<!-- Custom Link -->
+<link rel="stylesheet" href="css/style.css" />
+
+<title>Le Trans</title>
+
+  </head>
+
+  <body>
+    <div class="popup popup--call">
+  <div class="popup__container">
+    <button class="popup__close" type="button" aria-label="Закрыть">
+      <svg width="15" height="15">
+        <use xlink:href="img/sprite.svg#close"></use>
+      </svg>
+    </button>
+    <div class="popup__wrapper">
+      <h2 class="popup__title">
+        Оставьте заявку <br />
+        на обратный звонок
+      </h2>
+      <div class="popup__text">
+        <p>И наш менеджер свяжется с вами в ближайшее врем</p>
+      </div>
+
+      <form class="form-popup">
+        <div class="form-popup__group">
+          <label class="form-popup__label">Имя</label>
+
+          <input
+            class="form-popup__input"
+            type="text"
+            placeholder="Введите ваше имя"
+            required
+          />
+        </div>
+        <div class="form-popup__group">
+          <label class="form-popup__label"> Контактный телефон </label>
+
+          <input
+            class="form-popup__input"
+            type="tel"
+            placeholder="+7 (___) ___-__-__"
+            required
+          />
+        </div>
+
+        <label class="checkbox">
+          <input class="checkbox__input" type="checkbox" checked />
+          <span class="checkbox__box"></span>
+          <span class="checkbox__text">
+            Я принимаю <a href="#">пользовательское соглашение</a> и
+            подтверждаю, что ознакомлен и согласен с
+            <a href="#">политикой конфиденциальности</a> данного сайта
+          </span>
+        </label>
+
+        <button class="form-popup__btn btn" type="button">
+          Заказать звонок
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="popup popup--reviews">
+  <div class="popup__container">
+    <button class="popup__close" type="button" aria-label="Закрыть">
+      <svg width="15" height="15">
+        <use xlink:href="img/sprite.svg#close"></use>
+      </svg>
+    </button>
+    <div class="popup__wrapper">
+      <h2 class="popup__title">Оставьте отзыв о работе нашей компании</h2>
+      <div class="popup__text">
+        <p>Ваш отзыв в скором времени будет опубликован</p>
+      </div>
+
+      <form class="form-popup">
+        <div class="form-popup__groups">
+          <div class="form-popup__group">
+            <label class="form-popup__label">Тип груза</label>
+
+            <input
+              class="form-popup__input"
+              type="text"
+              placeholder="Какой груз мы вам перевозили"
+              required
+            />
+          </div>
+          <div class="form-popup__group">
+            <label class="form-popup__label">Маршрут</label>
+
+            <input
+              class="form-popup__input"
+              type="name"
+              placeholder="Укажите откуда - куда доставляли"
+              required
+            />
+          </div>
+          <div class="form-popup__group">
+            <label class="form-popup__label">Имя</label>
+
+            <input
+              class="form-popup__input"
+              type="name"
+              placeholder="Ваше имя"
+              required
+            />
+          </div>
+          <div class="form-popup__group form-popup__group--big">
+            <label class="form-popup__label">Отзыв</label>
+            <textarea
+              class="form-popup__input"
+              placeholder="Текст отзыва"
+            ></textarea>
+          </div>
+        </div>
+
+        <label class="checkbox">
+          <input class="checkbox__input" type="checkbox" checked />
+          <span class="checkbox__box"></span>
+          <span class="checkbox__text">
+            Я принимаю <a href="#">пользовательское соглашение</a> и
+            подтверждаю, что ознакомлен и согласен с
+            <a href="#">политикой конфиденциальности</a> данного сайта
+          </span>
+        </label>
+
+        <button class="form-popup__btn btn" type="button">
+          Заказать звонок
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+    <div class="site-wrapper">
+      <header class="header">
+  <!-- Mobile Menu -->
+  <div class="mobile-menu">
+    <div class="mobile-menu__top">
+      <button
+        class="mobile-menu__close"
+        type="button"
+        aria-label="Закрыть меню"
+      >
+        <svg>
+          <use xlink:href="img/sprite.svg#close"></use>
+        </svg>
+      </button>
+    </div>
+    <div class="mobile-menu__wrapper">
+      <div class="mobile-menu__col">
+        <p class="mobile-menu__name">Компания</p>
+        <ul class="mobile-menu__list">
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="#"><span>Услуги </span></a>
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="#"><span>Автопарк</span></a>
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="#"><span>Отзывы</span></a>
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="#"><span>Контакты</span></a>
+          </li>
+        </ul>
+      </div>
+      <div class="mobile-menu__col">
+        <p class="mobile-menu__name">Услуги</p>
+        <ul class="mobile-menu__list">
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="#"
+              ><span>Попутные грузоперевозки ​ </span></a
+            >
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="#"
+              ><span> Сборные грузоперевозки</span></a
+            >
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="#"><span>Переезды</span></a>
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="#"
+              ><span> Рефрижераторные перевозки</span></a
+            >
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="#"
+              ><span> Продовольственные перевозки</span></a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="mobile-menu__right">
+        <div class="mobile-menu__phone" href="#">
+          <a href="tel:+77011234567 ">8-701-123-45-67 </a>
+          <small> горячая линия 24 часа, звонок бесплатный</small>
+        </div>
+
+        <a class="mobile-menu__mail" href="mailto:info@le-trans.kz"
+          >info@le-trans.kz</a
+        >
+
+        <div class="mobile-menu__sosials">
+          <ul class="socials">
+            <li class="socials__item">
+              <a class="socials__link" href="#">
+                <svg>
+                  <use xlink:href="img/sprite.svg#vk"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link" href="#">
+                <svg>
+                  <use xlink:href="img/sprite.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link" href="#">
+                <svg>
+                  <use xlink:href="img/sprite.svg#whatsapp"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link" href="#">
+                <svg>
+                  <use xlink:href="img/sprite.svg#telegram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link" href="#">
+                <svg>
+                  <use xlink:href="img/sprite.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Mobile Menu -->
+
+  <!--  -->
+  <div class="dropdown" data-target="services-drop">
+    <div class="container">
+      <div class="dropdown__cols">
+        <div class="dropdown__col">
+          <b class="dropdown__name">Переезды</b>
+          <p class="dropdown__text">
+            Заказать квартирный, домашний или офисный переезд
+          </p>
+
+          <div class="dropdown__btns">
+            <a class="dropdown__btn btn btn--white" href="#">
+              Переезды военослужащий
+            </a>
+            <a class="dropdown__btn btn btn--white" href="#">
+              Квартирные, офисные и домашние переезды
+            </a>
+            <a class="dropdown__btn btn btn--white" href="#">
+              Дачные переезды
+            </a>
+          </div>
+        </div>
+        <div class="dropdown__col">
+          <b class="dropdown__name">Перевозки продутов</b>
+          <p class="dropdown__text">
+            Груз с соблюдением санитарных норм и температурного режима
+          </p>
+          <div class="dropdown__btns">
+            <a class="dropdown__btn btn btn--white" href="#">
+              Продовольственные перевозки
+            </a>
+            <a class="dropdown__btn btn btn--white" href="#">
+              Рефрижераторные перевозки
+            </a>
+          </div>
+        </div>
+        <div class="dropdown__col">
+          <b class="dropdown__name">Малый груз</b>
+          <p class="dropdown__text">
+            Сборные грузы экономия на доставке мелких товаров
+          </p>
+
+          <div class="dropdown__btns">
+            <a class="dropdown__btn btn btn--white" href="#">
+              Сборные грузоперевозки
+            </a>
+            <a class="dropdown__btn btn btn--white" href="#">
+              Попутные грузоперевозки
+            </a>
+          </div>
+        </div>
+        <div class="dropdown__col">
+          <b class="dropdown__name">Большой груз</b>
+          <p class="dropdown__text">Груз с первышенным весом или габаритами</p>
+
+          <div class="dropdown__btns">
+            <a class="dropdown__btn btn btn--white" href="#">
+              Негобаритные перевозки
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--  -->
+
+  <div class="header__top">
+    <div class="container">
+      <div class="header__top-inner">
+        <a class="header__logo" href="index.html">
+          <img src="img/logo.png" alt="logo" />
+        </a>
+
+        <button class="header__toggle" type="button" aria-label="Открыть меню">
+          <span class="header__toggle-line"></span>
+        </button>
+
+        <a class="header__calc btn btn--light" href="#">
+          <svg>
+            <use xlink:href="img/sprite.svg#calc"></use>
+          </svg>
+          Узнать стоимость
+        </a>
+
+        <div class="header__item">
+          <b>E-mail: </b>
+          <a href="mailto:info@le-trans.kz">
+            <svg>
+              <use xlink:href="img/sprite.svg#mail"></use>
+            </svg>
+
+            info@le-trans.kz
+          </a>
+        </div>
+
+        <div class="header__item">
+          <b>Бесплатный по Казахстану: </b>
+          <a class="header__phone" href="tel:+77011234567">
+            <svg>
+              <use xlink:href="img/sprite.svg#phone"></use>
+            </svg>
+            8-701-123-45-67
+          </a>
+        </div>
+
+        <button class="header__btn btn btn-call" type="button">
+          ЗАКАЗАТЬ ЗВОНОК
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <nav class="header__bottom">
+    <div class="container">
+      <ul class="menu">
+        <li class="menu__item">
+          <a class="menu__link" href="index.html">Главная</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="services.html" data-target="services-drop"
+            >Услуги</a
+          >
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="transport.html">Автопарк</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#">Отследить груз</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="reviews.html">Отзывы</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="contacts.html">Контакты</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+
+      <main class="main">
+        <section class="hero" style="background-image: url('img/hero-bg-all.jpg')">
+  <div class="container">
+    <div class="hero__wrapper">
+      <div class="hero__left">
+        <h1 class="hero__title">
+          Международные Грузовые перевозки в казахстане
+        </h1>
+        <p class="hero__text">
+          Осуществляем грузоперевозки более 10 лет и являемся одним из лидеров
+          рынка транспортных услуг.
+        </p>
+        <button class="hero__btn btn" type="button">
+          Заказать КОНСУЛЬТАЦИЮ
+        </button>
+      </div>
+      <form class="hero__right form-calc">
+        <div class="form-calc__inner">
+          <div class="form-calc__group">
+            <label class="form-calc__label">
+              Рассчитать стоимость перевозки:
+            </label>
+            <div class="form-calc__inputs">
+              <div class="form-calc__input-wrap">
+                <svg class="form-calc__icon">
+                  <use xlink:href="img/sprite.svg#location"></use>
+                </svg>
+                <input
+                  class="form-calc__input form-calc__input--pl"
+                  type="text"
+                  placeholder="Откуда"
+                />
+              </div>
+              <div class="form-calc__input-wrap">
+                <svg class="form-calc__icon">
+                  <use xlink:href="img/sprite.svg#location"></use>
+                </svg>
+                <input
+                  class="form-calc__input form-calc__input--pl"
+                  type="text"
+                  placeholder="Куда"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="form-calc__group">
+            <label class="form-calc__label"> Информация о грузе: </label>
+            <div class="form-calc__inputs">
+              <div class="form-calc__input-wrap">
+                <input
+                  class="form-calc__input form-calc__input--pr"
+                  type="text"
+                  placeholder="Объем"
+                />
+                <span class="form-calc__measure">м <sup>3</sup></span>
+              </div>
+              <div class="form-calc__input-wrap">
+                <input class="form-calc__input form-calc__input--pr" type="text" placeholder="Вес" />
+                <span class="form-calc__measure">кг</span>
+              </div>
+            </div>
+          </div>
+          <div class="form-calc__group">
+            <label class="form-calc__label">Контактные даные</label>
+            <div class="form-calc__inputs">
+              <div class="form-calc__input-wrap">
+                <input
+                  class="form-calc__input"
+                  type="text"
+                  placeholder="Ваше имя"
+                />
+              </div>
+              <div class="form-calc__input-wrap">
+                <input
+                  class="form-calc__input"
+                  type="tel"
+                  placeholder="Ваш телефон"
+                />
+              </div>
+              <div class="form-calc__input-wrap">
+                <input
+                  class="form-calc__input"
+                  type="text"
+                  placeholder="Название компании"
+                />
+              </div>
+              <div class="form-calc__input-wrap">
+                <input
+                  class="form-calc__input"
+                  type="email"
+                  placeholder="Ваш e-mail"
+                />
+              </div>
+            </div>
+          </div>
+
+          <label class="checkbox">
+            <input class="checkbox__input" type="checkbox" required />
+            <span class="checkbox__box"></span>
+            <span class="checkbox__text">
+              Я принимаю <a href="#">пользовательское соглашение</a> и
+              подтверждаю, что ознакомлен и согласен с
+              <a href="#">политикой конфиденциальности</a> данного сайта
+            </span>
+          </label>
+
+          <button class="form-calc__btn btn" type="submit">
+            Рассчитать стоимость
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+        <section class="benefits">
+  <div class="container">
+    <h2 class="visually-hidden">Преимущества</h2>
+    <ul class="benefits__list">
+      <li class="benefits-item">
+        <div class="benefits-item__top">
+          <img src="img/benefits/1.png" alt="img" />
+          <b class="benefits-item__name">
+            АДРЕСНАЯ <br />
+            ДОСТАВКА
+          </b>
+        </div>
+        <p class="benefits-item__text">
+          Доставка до адреса <br />
+          получателя с уточнением удобного для него времени
+        </p>
+      </li>
+      <li class="benefits-item">
+        <div class="benefits-item__top">
+          <img src="img/benefits/2.png" alt="img" />
+          <b class="benefits-item__name">
+            ОПЛАТА <br />
+            В ОДИН КОНЕЦ
+          </b>
+        </div>
+        <p class="benefits-item__text">
+          Вы оплачиваете стоимость перевозки в один конец, <br />
+          не платите за обратную дорогу
+        </p>
+      </li>
+      <li class="benefits-item">
+        <div class="benefits-item__top">
+          <img src="img/benefits/3.png" alt="img" />
+          <b class="benefits-item__name">
+            ДОСТАВКА ГРУЗА <br />
+            ТОЧНО В СРОк
+          </b>
+        </div>
+        <p class="benefits-item__text">
+          Мы гарантируем качественную доставку груза точно в указанный срок
+        </p>
+      </li>
+      <li class="benefits-item">
+        <div class="benefits-item__top">
+          <img src="img/benefits/4.png" alt="img" />
+          <b class="benefits-item__name">
+            РАБОТАЕМ 24/7 <br />
+            БЕЗ ВЫХОДНЫХ
+          </b>
+        </div>
+        <p class="benefits-item__text">
+          Обращайтесь в любое время по телефону или на почтовый <br />
+          адрес и мы ответим вам
+        </p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+        <section class="services">
+  <div class="container">
+    <h2 class="services__title">Наши услуги</h2>
+
+    <ul class="services__list">
+      <li class="services__item">
+        <a class="services-card" href="#">
+          <div class="services-card__img">
+            <img src="img/services/1.jpg" alt="img" />
+          </div>
+          <div class="services-card__inner">
+            <h3 class="services-card__title">авто перевозки</h3>
+            <p class="services-card__text">от 1 тонны до 20 тонн</p>
+          </div>
+        </a>
+      </li>
+      <li class="services__item">
+        <a class="services-card" href="#">
+          <div class="services-card__img">
+            <img src="img/services/2.jpg" alt="img" />
+          </div>
+          <div class="services-card__inner">
+            <h3 class="services-card__title">
+              Сборные <br />
+              грузоперевозки
+            </h3>
+            <p class="services-card__text">от 100 кг до 20 тонн</p>
+          </div>
+        </a>
+      </li>
+      <li class="services__item">
+        <a class="services-card" href="#">
+          <div class="services-card__img">
+            <img src="img/services/3.jpg" alt="img" />
+          </div>
+          <div class="services-card__inner">
+            <h3 class="services-card__title">
+              Квартирные, офисные <br />
+              и домашние переезды
+            </h3>
+            <p class="services-card__text">от 100 кг до 20 тонн</p>
+          </div>
+        </a>
+      </li>
+      <li class="services__item">
+        <a class="services-card" href="#">
+          <div class="services-card__img">
+            <img src="img/services/4.jpg" alt="img" />
+          </div>
+          <div class="services-card__inner">
+            <h3 class="services-card__title">
+              рефрижераторные <br />
+              перевозки
+            </h3>
+            <p class="services-card__text">от 100 кг до 20 тонн</p>
+          </div>
+        </a>
+      </li>
+      <li class="services__item">
+        <a class="services-card" href="#">
+          <div class="services-card__img">
+            <img src="img/services/5.jpg" alt="img" />
+          </div>
+          <div class="services-card__inner">
+            <h3 class="services-card__title">
+              Авиа <br />
+              перевозки
+            </h3>
+            <p class="services-card__text">от 1 до 3 тонн</p>
+          </div>
+        </a>
+      </li>
+      <li class="services__item">
+        <a class="services-card" href="#">
+          <div class="services-card__img">
+            <img src="img/services/6.jpg" alt="img" />
+          </div>
+          <div class="services-card__inner">
+            <h3 class="services-card__title">
+              Международные <br />
+              перевозки
+            </h3>
+            <p class="services-card__text">от 100 кг до 20 тонн</p>
+          </div>
+        </a>
+      </li>
+      <li class="services__item services__item--big">
+        <a class="services-card" href="#">
+          <div class="services-card__img">
+            <img src="img/services/7.jpg" alt="img" />
+          </div>
+          <div class="services-card__inner">
+            <h3 class="services-card__title">
+              негабаритные <br />
+              перевозки
+            </h3>
+            <p class="services-card__text">от 3 тонн и выше</p>
+          </div>
+        </a>
+      </li>
+      <li class="services__item services__item--big">
+        <a class="services-card" href="#">
+          <div class="services-card__img">
+            <img src="img/services/8.jpg" alt="img" />
+          </div>
+          <div class="services-card__inner">
+            <h3 class="services-card__title">
+              Аренда <br />
+              спецтехники
+            </h3>
+            <p class="services-card__text">Краны, самосвалы</p>
+          </div>
+        </a>
+      </li>
+    </ul>
+
+    <a class="services__btn btn" href="#">Все услуги</a>
+  </div>
+</section>
+
+        <section class="transport-slider">
+  <div class="container">
+    <div class="transport-slider__top">
+      <h2 class="transport-slider__title">Закажите выделенный транспорт</h2>
+      <a class="transport-slider__btn btn btn--light" href="#">смотреть все </a>
+    </div>
+  </div>
+
+  <div class="container container--big">
+    <div class="transport-slider__content">
+      <button class="swiper-button-prev" type="button" aria-label="Предыдущий">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-6 h-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M15.75 19.5L8.25 12l7.5-7.5"
+          />
+        </svg>
+      </button>
+      <button class="swiper-button-next" type="button" aria-label="Следующий">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-6 h-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M8.25 4.5l7.5 7.5-7.5 7.5"
+          />
+        </svg>
+      </button>
+      <div class="transport-slider__slider swiper">
+        <ul class="transport-slider__slides swiper-wrapper">
+          <li class="transport-slider__slide swiper-slide">
+            <div class="transport-card">
+              <div class="transport-card__top">
+                <img src="img/transport/1.png" alt="img" />
+              </div>
+              <div class="transport-card__body">
+                <div class="transport-card__size">4.2 x 2 x 2</div>
+
+                <div class="transport-card__spec">
+                  <span>до 3 тонн</span>
+                  <b>от 44 ₸/км</b>
+                </div>
+
+                <button class="transport-card__btn btn btn--light">заказать</button>
+              </div>
+            </div>
+          </li>
+          <li class="transport-slider__slide swiper-slide">
+            <div class="transport-card">
+              <div class="transport-card__top">
+                <img src="img/transport/2.png" alt="img" />
+              </div>
+              <div class="transport-card__body">
+                <div class="transport-card__size">5.4 x 2.45 x 2.5</div>
+
+                <div class="transport-card__spec">
+                  <span>до 5 тонн</span>
+                  <b>от 82 ₸/км</b>
+                </div>
+
+                <button class="transport-card__btn btn btn--light">заказать</button>
+              </div>
+            </div>
+          </li>
+          <li class="transport-slider__slide swiper-slide">
+            <div class="transport-card">
+              <div class="transport-card__top">
+                <img src="img/transport/3.png" alt="img" />
+              </div>
+              <div class="transport-card__body">
+                <div class="transport-card__size">7.6 x 2.45 x 2,5</div>
+
+                <div class="transport-card__spec">
+                  <span>до 10 тонн</span>
+                  <b>от 104 ₸/км</b>
+                </div>
+
+                <button class="transport-card__btn btn btn--light">заказать</button>
+              </div>
+            </div>
+          </li>
+          <li class="transport-slider__slide swiper-slide">
+            <div class="transport-card">
+              <div class="transport-card__top">
+                <img src="img/transport/4.png" alt="img" />
+              </div>
+              <div class="transport-card__body">
+                <div class="transport-card__size">13.6 x 2.45 x 2.6</div>
+
+                <div class="transport-card__spec">
+                  <span>до 20 тонн</span>
+                  <b>от 160 ₸/км</b>
+                </div>
+
+                <button class="transport-card__btn btn btn--light">заказать</button>
+              </div>
+            </div>
+          </li>
+          <li class="transport-slider__slide swiper-slide">
+            <div class="transport-card">
+              <div class="transport-card__top">
+                <img src="img/transport/1.png" alt="img" />
+              </div>
+              <div class="transport-card__body">
+                <div class="transport-card__size">4.2 x 2 x 2</div>
+
+                <div class="transport-card__spec">
+                  <span>до 3 тонн</span>
+                  <b>от 44 ₸/км</b>
+                </div>
+
+                <button class="transport-card__btn btn btn--light">заказать</button>
+              </div>
+            </div>
+          </li>
+          <li class="transport-slider__slide swiper-slide">
+            <div class="transport-card">
+              <div class="transport-card__top">
+                <img src="img/transport/1.png" alt="img" />
+              </div>
+              <div class="transport-card__body">
+                <div class="transport-card__size">4.2 x 2 x 2</div>
+
+                <div class="transport-card__spec">
+                  <span>до 3 тонн</span>
+                  <b>от 44 ₸/км</b>
+                </div>
+
+                <button class="transport-card__btn btn btn--light">заказать</button>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <section class="delivery" style="background-image: url('img/delivery-bg.jpg')">
+  <div class="delivery__wrapper">
+    <div class="delivery__left">
+      <h2 class="delivery__title">
+        Хотите быстро <br />
+        доставить груз в целости <br />
+        и сохранности?
+      </h2>
+
+      <p class="delivery__text">
+        Мы доставляем грузы от адреса до адреса, без перевалки по складам — это:
+      </p>
+
+      <ul class="delivery__list">
+        <li class="delivery__item">Гарантирует сохранность груза</li>
+        <li class="delivery__item">Сокращает срок доставки</li>
+      </ul>
+    </div>
+    <div
+      class="delivery__img"
+      style="background-image: url('img/delivery-img.jpg')"
+    ></div>
+  </div>
+</section>
+
+        <section class="steps">
+  <div class="container">
+    <div class="steps__wrapper">
+      <div class="steps__left">
+        <h2 class="steps__title">
+          <span>Всего 5 шагов </span> до получения груза
+        </h2>
+        <div class="steps__text">
+          <p>
+            Мы предлагаем нашим клиентам услуги грузовых перевозок по Алмату и
+            другим городам Казахстана.
+          </p>
+          <p>
+            Мы контролируем скорость, надежность и качество перевозок, а также
+            оперативно вносим изменения по вашим персональным требованиям к
+            доставке.
+          </p>
+        </div>
+        <button class="steps__btn btn" type="button">СДЕЛАТЬ ПЕРВЫЙ ШАГ</button>
+      </div>
+
+      <div class="steps__right">
+        <img class="steps__img" src="img/steps-img.png" alt="img" />
+        <div class="steps__items">
+          <div class="steps__item">
+            <b>Заявка или расчёт</b>
+            <p>
+              Вы оставляете заявку или расчёт в калькуляторе или <br />
+              звоните нам по бесплатному номеру 8-701-123-45-67
+            </p>
+          </div>
+          <div class="steps__item">
+            <b>Консультация менеджера</b>
+            <p>
+              Наши специалисты свяжутся с Вами для консультации и расчёта <br />
+              перевозки Вашего груза. Уточнит все детали перевозки.
+            </p>
+          </div>
+          <div class="steps__item">
+            <b>Отправка данных</b>
+            <p>
+              Мы отправляем вам информацию по расчёту стоимости, <br />
+              реквизиты и договор.
+            </p>
+          </div>
+          <div class="steps__item">
+            <b>Оплата перевозки</b>
+            <p>
+              Вы оплачиваете 30% стоимости перевозки до погрузки вашего <br />
+              груза по запланированной дате и времени.
+            </p>
+          </div>
+          <div class="steps__item">
+            <b>Получение груза</b>
+            <p>
+              Вы получаете груз в запланированном месте, проверяете, <br />
+              оплачиваете оставшуюся сумму.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <section class="reviews" style="background-image: url('img/reviews-bg.jpg')">
+  <div class="container container--1420">
+    <div class="reviews__top">
+      <h2 class="reviews__title">
+        Отзывы о компании <br />
+        «Le trans»
+      </h2>
+      <p class="reviews__text">
+        Мы контролируем скорость, надежность и качество перевозок, а также
+        оперативно вносим изменения по вашим персональным требованиям к
+        доставке.
+      </p>
+    </div>
+
+    <div class="reviews__slider swiper">
+      <ul class="reviews__slides swiper-wrapper">
+        <li class="reviews__slide swiper-slide">
+          <article class="reviews-card">
+            <h3 class="reviews-card__title">Перевозка упаковки</h3>
+            <p class="reviews-card__text">
+              Перевозка груза из Астаны в Актау была выполнена за 1 сутки и
+              оооочень качественно! Рекомендую и обязательно обращусь еще раз!
+            </p>
+
+            <div class="reviews-card__stars">
+              <svg
+                class="reviews-card__star"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="#ffc107"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"
+                />
+              </svg>
+              <svg
+                class="reviews-card__star"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="#ffc107"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"
+                />
+              </svg>
+              <svg
+                class="reviews-card__star"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="#ffc107"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"
+                />
+              </svg>
+              <svg
+                class="reviews-card__star"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="#ffc107"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"
+                />
+              </svg>
+              <svg
+                class="reviews-card__star"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="#ffc107"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"
+                />
+              </svg>
+            </div>
+
+            <div class="reviews-client">
+              <img class="reviews-client__img" src="img/user.png" alt="img" />
+              <p class="reviews-client__name">Дмитрий, Астана – Актау</p>
+            </div>
+          </article>
+        </li>
+        <li class="reviews__slide swiper-slide">
+          <article class="reviews-card">
+            <h3 class="reviews-card__title">Перевозка упаковки</h3>
+            <p class="reviews-card__text">
+              Отличный перевозчик. Подобрали машину и вовремя поставили.
+              Предложили меньшую цену в сравнении с другими. Перевозчик всегда
+              на связи <a href="#">читать далее</a>
+            </p>
+
+            <div class="reviews-card__stars">
+              <svg
+                class="reviews-card__star"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="#ffc107"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"
+                />
+              </svg>
+              <svg
+                class="reviews-card__star"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="#ffc107"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"
+                />
+              </svg>
+              <svg
+                class="reviews-card__star"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="#ffc107"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"
+                />
+              </svg>
+              <svg
+                class="reviews-card__star"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="#ffc107"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"
+                />
+              </svg>
+              <svg
+                class="reviews-card__star"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="#ffc107"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"
+                />
+              </svg>
+            </div>
+
+            <div class="reviews-client">
+              <img class="reviews-client__img" src="img/user.png" alt="img" />
+              <p class="reviews-client__name">Ирина, Астана – Тараз</p>
+            </div>
+          </article>
+        </li>
+        <li class="reviews__slide swiper-slide">
+          <article class="reviews-card">
+            <h3 class="reviews-card__title">Перевозка упаковки</h3>
+            <p class="reviews-card__text">
+              Перевозка груза из Астаны в Туркестан была выполнена за 1 сутки и
+              оооочень качественно! Рекомендую и обязательно обращусь еще раз!
+            </p>
+
+            <div class="reviews-card__stars">
+              <svg
+                class="reviews-card__star"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="#ffc107"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"
+                />
+              </svg>
+              <svg
+                class="reviews-card__star"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="#ffc107"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"
+                />
+              </svg>
+              <svg
+                class="reviews-card__star"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="#ffc107"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"
+                />
+              </svg>
+              <svg
+                class="reviews-card__star"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="#ffc107"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"
+                />
+              </svg>
+              <svg
+                class="reviews-card__star"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="#ffc107"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"
+                />
+              </svg>
+            </div>
+
+            <div class="reviews-client">
+              <img class="reviews-client__img" src="img/user.png" alt="img" />
+              <p class="reviews-client__name">Иван, Астана – Туркестан</p>
+            </div>
+          </article>
+        </li>
+        <li class="reviews__slide swiper-slide">
+          <article class="reviews-card">
+            <h3 class="reviews-card__title">Перевозка упаковки</h3>
+            <p class="reviews-card__text">
+              Перевозка груза из Астаны в Актау была выполнена за 1 сутки и
+              оооочень качественно! Рекомендую и обязательно обращусь еще раз!
+            </p>
+
+            <div class="reviews-card__stars">
+              <svg
+                class="reviews-card__star"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="#ffc107"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"
+                />
+              </svg>
+              <svg
+                class="reviews-card__star"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="#ffc107"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"
+                />
+              </svg>
+              <svg
+                class="reviews-card__star"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="#ffc107"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"
+                />
+              </svg>
+              <svg
+                class="reviews-card__star"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="#ffc107"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"
+                />
+              </svg>
+              <svg
+                class="reviews-card__star"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="#ffc107"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"
+                />
+              </svg>
+            </div>
+
+            <div class="reviews-client">
+              <img class="reviews-client__img" src="img/user.png" alt="img" />
+              <p class="reviews-client__name">Дмитрий, Астана – Актау</p>
+            </div>
+          </article>
+        </li>
+      </ul>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <div class="reviews__btns">
+      <a class="reviews__btn btn reviews__btn--all" href="#">ВСЕ ОТЗЫВЫ</a>
+      <span>или</span>
+      <button class="reviews__btn btn reviews__btn--send" type="button">
+        ОСТАВИТЬ ОТЗЫВ
+      </button>
+    </div>
+  </div>
+</section>
+
+        <section class="banner">
+  <h2 class="visually-hidden">Преимущества</h2>
+  <div class="container">
+    <ul class="banner__list">
+      <li class="banner-item">
+        <div class="banner-item__inner">
+          <span class="banner-item__name">
+            Расчёт стоимости <br />
+            не более 15 минут
+          </span>
+          <button class="banner-item__btn btn" type="button">
+            Заказать расчет
+          </button>
+        </div>
+      </li>
+      <li class="banner-item">
+        <div class="banner-item__inner">
+          <span class="banner-item__name">
+            Информирование <br />
+            о стадиях перевозки <br />
+            по WhatsApp и E-MAIL
+          </span>
+          <p class="banner-item__text">Удобный онлайн-сервис.</p>
+          <button class="banner-item__btn btn" type="button">
+            Отследить груз
+          </button>
+        </div>
+      </li>
+      <li class="banner-item">
+        <div class="banner-item__inner">
+          <span class="banner-item__name">
+            Работа в праздники <br />
+            и выходные
+          </span>
+          <a class="banner-item__phone" href="tel:+77011234567">
+            8-701-123-45-67
+          </a>
+        </div>
+      </li>
+      <li class="banner-item">
+        <div class="banner-item__inner">
+          <span class="banner-item__name">
+            Поддержка персонального <br />
+            менеджера 24/7
+          </span>
+          <p class="banner-item__text">
+            Личный менеджер находится <br />
+            на связи в любое время суток <br />
+            и помогает решить любые вопросы.
+          </p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+        <section class="numbers">
+  <div class="container">
+    <div class="numbers__wrapper">
+      <div class="numbers__top">
+        <h2 class="numbers__title">Мы в цифрах</h2>
+        <p class="numbers__text">
+          Наша организация выполняет перевозки с 2009 года за это время мы
+          выполнили более 5 000 грузоперевозок.
+        </p>
+      </div>
+
+      <ul class="numbers__list">
+        <li class="numbers-item">
+          <div class="numbers-item__circle">
+            <div class="numbers-item__line">
+              <div class="numbers-item__fill">
+                <img src="img/numbers/1.png" alt="img" />
+              </div>
+              <span class="numbers-item__number">3</span>
+            </div>
+          </div>
+          <span class="numbers-item__text">
+            Филиала по всему <br />
+            Казахстану
+          </span>
+        </li>
+        <li class="numbers-item">
+          <div class="numbers-item__circle">
+            <div class="numbers-item__line">
+              <div class="numbers-item__fill">
+                <img src="img/numbers/2.png" alt="img" />
+              </div>
+              <span class="numbers-item__number">5832</span>
+            </div>
+          </div>
+          <span class="numbers-item__text">
+            Грузоперевозок <br />
+            выполнили
+          </span>
+        </li>
+        <li class="numbers-item">
+          <div class="numbers-item__circle">
+            <div class="numbers-item__line">
+              <div class="numbers-item__fill">
+                <img src="img/numbers/3.png" alt="img" />
+              </div>
+              <span class="numbers-item__number">825</span>
+            </div>
+          </div>
+          <span class="numbers-item__text">
+            Города получили <br />
+            груз
+          </span>
+        </li>
+        <li class="numbers-item">
+          <div class="numbers-item__circle">
+            <div class="numbers-item__line">
+              <div class="numbers-item__fill">
+                <img src="img/numbers/4.png" alt="img" />
+              </div>
+              <span class="numbers-item__number">8892</span>
+            </div>
+          </div>
+          <span class="numbers-item__text">
+            Тонн груза <br />
+            перевезли
+          </span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+        <section class="regions">
+  <!-- <div class="container"> -->
+  <div class="regions__wrapper">
+    <div class="regions__left">
+      <h2 class="regions__title">Грузоперевозки по России и СНГ</h2>
+      <div class="regions__text">
+        <p>
+          Грузоперевозки по России компания «Inside Logistics Group»
+          осуществляет с 2012 года. За это время компания доказала свою
+          надежность и работу на высоком уровне.
+        </p>
+        <p>
+          Мы оказываем услуги по автоперевозке грузов в города России, а так же
+          в страны СНГ.
+        </p>
+      </div>
+      <div class="regions__accordions">
+        <div class="regions-accordions">
+          <div class="regions-accordions__accordion accordion">
+            <button
+              class="regions-accordions__control accordion-control-btn"
+              type="button"
+            >
+              Все города
+
+              <svg>
+                <use xlink:href="img/sprite.svg#chevron"></use>
+              </svg>
+            </button>
+
+            <div class="regions-accordions__content accordion-content">
+              <div class="regions-accordions__inner">
+                <a class="regions-accordions__link" href="#">Москва</a>
+                <a class="regions-accordions__link" href="#">Санкт-Петербург</a>
+                <a class="regions-accordions__link" href="#">Екатеринбург</a>
+                <a class="regions-accordions__link" href="#">Казань</a>
+                <a class="regions-accordions__link" href="#">Краснодар</a>
+                <a class="regions-accordions__link" href="#">Сочи</a>
+                <a class="regions-accordions__link" href="#">Ростов-на-Дону</a>
+                <a class="regions-accordions__link" href="#">Анапа</a>
+                <a class="regions-accordions__link" href="#">Нижний Новгород</a>
+                <a class="regions-accordions__link" href="#">Саратов</a>
+                <a class="regions-accordions__link" href="#">Новосибирск</a>
+                <a class="regions-accordions__link" href="#">Крымск</a>
+                <a class="regions-accordions__link" href="#">Новороссийск</a>
+                <a class="regions-accordions__link" href="#">
+                  Узбекистан, г. Ташкент
+                </a>
+                <a class="regions-accordions__link" href="#">
+                  Киргизстан, г. Бишкек
+                </a>
+                <a class="regions-accordions__link" href="#">
+                  Таджикистан, г. Душанбе.
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="regions-accordions__accordion accordion">
+            <button
+              class="regions-accordions__control accordion-control-btn"
+              type="button"
+            >
+              Все регионы
+
+              <svg>
+                <use xlink:href="img/sprite.svg#chevron"></use>
+              </svg>
+            </button>
+
+            <div class="regions-accordions__content accordion-content">
+              <div class="regions-accordions__inner">
+                <a class="regions-accordions__link" href="#">Алматы</a>
+                <a class="regions-accordions__link" href="#">Астана</a>
+                <a class="regions-accordions__link" href="#">Тараз</a>
+                <a class="regions-accordions__link" href="#">Кызылорда</a>
+                <a class="regions-accordions__link" href="#">Туркестан</a>
+                <a class="regions-accordions__link" href="#">Актау</a>
+                <a class="regions-accordions__link" href="#">Атырау</a>
+                <a class="regions-accordions__link" href="#">Актобе</a>
+                <a class="regions-accordions__link" href="#">Уральск</a>
+                <a class="regions-accordions__link" href="#">Костанай</a>
+                <a class="regions-accordions__link" href="#">Кокшетау</a>
+                <a class="regions-accordions__link" href="#">Караганда</a>
+                <a class="regions-accordions__link" href="#">Жезказган</a>
+                <a class="regions-accordions__link" href="#">Петропавловск</a>
+                <a class="regions-accordions__link" href="#"
+                  >Усть-Каменогорск</a
+                >
+                <a class="regions-accordions__link" href="#">Семей</a>
+                <a class="regions-accordions__link" href="#">Павлодар</a>
+                <a class="regions-accordions__link" href="#">Талдыкорган</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="regions__img">
+        <img src="img/map-img.png" alt="img" />
+      </div>
+      <div class="regions__btns">
+        <button class="regions__btn btn" type="button">
+          Заказать грузоперевозку
+        </button>
+        <button class="regions__btn btn btn--white" type="button">
+          Все регионы
+        </button>
+      </div>
+    </div>
+    <div class="regions__right">
+      <div class="regions__cols">
+        <div class="regions__col">
+          <div class="regions__box">
+            <ul class="regions__list">
+              <li class="regions__item">
+                <a class="regions__link" href="#">Москва</a>
+              </li>
+              <li class="regions__item">
+                <a class="regions__link" href="#">Санкт-Петербург</a>
+              </li>
+              <li class="regions__item">
+                <a class="regions__link" href="#">Екатеринбург</a>
+              </li>
+              <li class="regions__item">
+                <a class="regions__link" href="#">Казань</a>
+              </li>
+              <li class="regions__item">
+                <a class="regions__link" href="#">Краснодар</a>
+              </li>
+              <li class="regions__item">
+                <a class="regions__link" href="#">Сочи</a>
+              </li>
+            </ul>
+          </div>
+          <div class="regions__box">
+            <ul class="regions__list">
+              <li class="regions__item">
+                <a class="regions__link" href="#">Ростов-на-Дону</a>
+              </li>
+              <li class="regions__item">
+                <a class="regions__link" href="#">Анапа</a>
+              </li>
+              <li class="regions__item">
+                <a class="regions__link" href="#">Нижний Новгород</a>
+              </li>
+              <li class="regions__item">
+                <a class="regions__link" href="#">Саратов</a>
+              </li>
+              <li class="regions__item">
+                <a class="regions__link" href="#">Новосибирск</a>
+              </li>
+            </ul>
+          </div>
+          <div class="regions__box">
+            <ul class="regions__list">
+              <li class="regions__item">
+                <a class="regions__link" href="#">Крымск</a>
+              </li>
+              <li class="regions__item">
+                <a class="regions__link" href="#">Новороссийск</a>
+              </li>
+              <li class="regions__item">
+                <a class="regions__link" href="#">Узбекистан, г. Ташкент</a>
+              </li>
+              <li class="regions__item">
+                <a class="regions__link" href="#">Киргизстан, г. Бишкек</a>
+              </li>
+              <li class="regions__item">
+                <a class="regions__link" href="#">Таджикистан, г. Душанбе.</a>
+              </li>
+            </ul>
+          </div>
+
+          <a class="regions__all" href=""> Все города</a>
+        </div>
+
+        <div class="regions__col">
+          <div class="regions__box">
+            <ul class="regions__list">
+              <li class="regions__item">
+                <a class="regions__link" href="#">Алматы</a>
+              </li>
+              <li class="regions__item">
+                <a class="regions__link" href="#">Астана</a>
+              </li>
+              <li class="regions__item">
+                <a class="regions__link" href="#">Шымкент</a>
+              </li>
+              <li class="regions__item">
+                <a class="regions__link" href="#">Тараз</a>
+              </li>
+              <li class="regions__item">
+                <a class="regions__link" href="#">Кызылорда</a>
+              </li>
+              <li class="regions__item">
+                <a class="regions__link" href="#">Туркестан</a>
+              </li>
+              <li class="regions__item">
+                <a class="regions__link" href="#">Актау</a>
+              </li>
+              <li class="regions__item">
+                <a class="regions__link" href="#">Атырау</a>
+              </li>
+              <li class="regions__item">
+                <a class="regions__link" href="#">Актобе</a>
+              </li>
+              <li class="regions__item">
+                <a class="regions__link" href="#">Уральск</a>
+              </li>
+              <li class="regions__item">
+                <a class="regions__link" href="#">Костанай</a>
+              </li>
+              <li class="regions__item">
+                <a class="regions__link" href="#">Кокшетау</a>
+              </li>
+              <li class="regions__item">
+                <a class="regions__link" href="#">Караганда</a>
+              </li>
+              <li class="regions__item">
+                <a class="regions__link" href="#">Жезказган</a>
+              </li>
+              <li class="regions__item">
+                <a class="regions__link" href="#">Петропавловск</a>
+              </li>
+              <li class="regions__item">
+                <a class="regions__link" href="#">Усть-Каменогорск</a>
+              </li>
+              <li class="regions__item">
+                <a class="regions__link" href="#">Семей</a>
+              </li>
+              <li class="regions__item">
+                <a class="regions__link" href="#">Павлодар</a>
+              </li>
+              <li class="regions__item">
+                <a class="regions__link" href="#">Талдыкорган</a>
+              </li>
+            </ul>
+          </div>
+
+          <a class="regions__all" href=""> Все регионы</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- </div> -->
+</section>
+
+        <section class="partners">
+  <div class="container">
+    <h2 class="partners__title">Наши партнёры</h2>
+
+    <ul class="partners__list">
+      <li class="partners__item">
+        <img src="img/partners/1.png" alt="img" />
+      </li>
+      <li class="partners__item">
+        <img src="img/partners/2.png" alt="img" />
+      </li>
+      <li class="partners__item">
+        <img src="img/partners/3.png" alt="img" />
+      </li>
+      <li class="partners__item">
+        <img src="img/partners/4.png" alt="img" />
+      </li>
+      <li class="partners__item">
+        <img src="img/partners/5.png" alt="img" />
+      </li>
+      <li class="partners__item">
+        <img src="img/partners/6.png" alt="img" />
+      </li>
+      <li class="partners__item">
+        <img src="img/partners/7.png" alt="img" />
+      </li>
+      <li class="partners__item">
+        <img src="img/partners/8.png" alt="img" />
+      </li>
+      <li class="partners__item">
+        <img src="img/partners/9.png" alt="img" />
+      </li>
+      <li class="partners__item">
+        <img src="img/partners/10.png" alt="img" />
+      </li>
+    </ul>
+
+    <button class="partners__btn btn" type="button">Стать партнером</button>
+  </div>
+</section>
+
+        <section
+  class="consultation"
+  style="background-image: url('img/consultation-bg.jpg')"
+>
+  <div class="container">
+    <div class="consultation__wrapper">
+      <h1 class="consultation__title">Узнайте все подробности:</h1>
+      <p class="consultation__text">
+        Позвоните нам или оставьте заявку на сайте и наши менеджеры <br />
+        проконсультируют Вас по любому вопросу.
+      </p>
+      <a class="consultation__phone" href="tel:+77011234567">
+        8-701-123-45-67
+        <span>Звонок бесплатный</span>
+      </a>
+
+      <button class="consultation__btn btn btn--white" type="button">
+        Заказать консультацию
+      </button>
+    </div>
+  </div>
+</section>
+
+        <section class="descr">
+  <div class="container">
+    <div class="descr__wrapper">
+      <div class="descr__left">
+        <h2 class="descr__title">
+          Транспортная компания <br />
+          LE TRANS -
+          <span> наши надежные партнеры </span>
+          и ваши отличные <br />
+          отзывы в один клик.
+        </h2>
+      </div>
+      <div class="descr__right">
+        <p>
+          С дополнительными подробностями на эту тему можно ознакомиться по
+          адресу, либо по телефону. Существует услуга написания письма менеджеру
+          в чат.
+        </p>
+
+        <p>
+          Заказчик может заказать любые перевозки, и ждать точной доставки по
+          указанному адресу с удобным для него временем. Оплачивать теперь надо
+          только за доставку продукта в один прямой путь, за обратную дорогу
+          нет.
+        </p>
+        <p>
+          Транспортная компания в Алмате LЕ-TRANS гарантирует качественную
+          доставку и перевозку груза в указанный срок. И работает без перерывов
+          и выходных 24/7, как на телефоне, так и по почтовому адресу.
+        </p>
+
+        <p>
+          Компания занимается как простыми перевозками малогабаритного груза,
+          так и грузоперевозками по всей стране, начиная с переезда офисов или
+          складов и заканчивая мебелью, техникой и личными вещами. Также
+          организация гарантирует сохранить целостность груза без перевалок,
+          перемещений по складам - в выгодном положении как покупатель, так и
+          фирма.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+      </main>
+      <footer class="footer">
+  <div class="container">
+    <div class="footer__wrapper">
+      <div class="footer__left">
+        <div class="footer__col">
+          <a class="footer__logo" href="#">
+            <img src="img/logo.png" alt="logo" />
+          </a>
+
+          <div class="footer__copy">
+            <div>©2023</div>
+            <div>«Le Trans»</div>
+
+            <div class="mt">
+              <div>Все права защищены</div>
+              <a href="#">Политика конфидициальности</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer__lists">
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="footer__link" href="#">О компании </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Автопарк </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Отзывы </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Контакты </a>
+            </li>
+          </ul>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="footer__link" href="#"> Попутные грузоперевозки </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#"> Сборные грузоперевозки</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#"> Переезды</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#"> Рефрижераторные перевозки</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Продовольственные перевозки​ </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Все услуги </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__right">
+        <div class="footer__contacts">
+          <a class="footer__phone" href="tel:+77011234567">
+            8-701-123-45-67
+            <small>Звонок бесплатный</small>
+          </a>
+
+          <button class="footer__btn btn btn-call" type="button">Заказать ЗВОНОК</button>
+
+          <div class="footer__sosials">
+            <ul class="socials">
+              <li class="socials__item">
+                <a class="socials__link" href="#">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#vk"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials__item">
+                <a class="socials__link" href="#">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials__item">
+                <a class="socials__link" href="#">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#whatsapp"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials__item">
+                <a class="socials__link" href="#">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#telegram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials__item">
+                <a class="socials__link" href="#">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <a class="footer__email" href="mailto:info@le-trans.kz">
+          <svg>
+            <use xlink:href="img/sprite.svg#mail"></use>
+          </svg>
+          <span>info@le-trans.kz</span>
+        </a>
+      </div>
+
+      <div class="footer__copy footer__copy--mobile">
+        <div>©2023</div>
+        <div>«Le Trans»</div>
+
+        <div class="mt">
+          <div>Все права защищены</div>
+          <a href="#">Политика конфидициальности</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    </div>
+
+    <!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- nouislider -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.0/nouislider.min.js"></script>
+
+<!-- jQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- Choices JS -->
+<script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+
+<!-- Input Mask -->
+<script
+  src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js"
+  type="text/javascript"
+></script>
+
+<!-- fancybox -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
+<!-- JS -->
+<script src="js/main.min.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+
+<!-- Link Swiper's CSS -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+<!-- nouislider -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.0/nouislider.min.css"
+/>
+
+<!-- Choices JS  -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css"
+/>
+
+<!-- fancybox -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"
+/>
+
+<!-- Custom Link -->
+<link rel="stylesheet" href="css/style.css" />
+
+<title>Le Trans</title>
+
+  </head>
+
+  <body>
+    <div class="popup popup--call">
+  <div class="popup__container">
+    <button class="popup__close" type="button" aria-label="Закрыть">
+      <svg width="15" height="15">
+        <use xlink:href="img/sprite.svg#close"></use>
+      </svg>
+    </button>
+    <div class="popup__wrapper">
+      <h2 class="popup__title">
+        Оставьте заявку <br />
+        на обратный звонок
+      </h2>
+      <div class="popup__text">
+        <p>И наш менеджер свяжется с вами в ближайшее врем</p>
+      </div>
+
+      <form class="form-popup">
+        <div class="form-popup__group">
+          <label class="form-popup__label">Имя</label>
+
+          <input
+            class="form-popup__input"
+            type="text"
+            placeholder="Введите ваше имя"
+            required
+          />
+        </div>
+        <div class="form-popup__group">
+          <label class="form-popup__label"> Контактный телефон </label>
+
+          <input
+            class="form-popup__input"
+            type="tel"
+            placeholder="+7 (___) ___-__-__"
+            required
+          />
+        </div>
+
+        <label class="checkbox">
+          <input class="checkbox__input" type="checkbox" checked />
+          <span class="checkbox__box"></span>
+          <span class="checkbox__text">
+            Я принимаю <a href="#">пользовательское соглашение</a> и
+            подтверждаю, что ознакомлен и согласен с
+            <a href="#">политикой конфиденциальности</a> данного сайта
+          </span>
+        </label>
+
+        <button class="form-popup__btn btn" type="button">
+          Заказать звонок
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="popup popup--reviews">
+  <div class="popup__container">
+    <button class="popup__close" type="button" aria-label="Закрыть">
+      <svg width="15" height="15">
+        <use xlink:href="img/sprite.svg#close"></use>
+      </svg>
+    </button>
+    <div class="popup__wrapper">
+      <h2 class="popup__title">Оставьте отзыв о работе нашей компании</h2>
+      <div class="popup__text">
+        <p>Ваш отзыв в скором времени будет опубликован</p>
+      </div>
+
+      <form class="form-popup">
+        <div class="form-popup__groups">
+          <div class="form-popup__group">
+            <label class="form-popup__label">Тип груза</label>
+
+            <input
+              class="form-popup__input"
+              type="text"
+              placeholder="Какой груз мы вам перевозили"
+              required
+            />
+          </div>
+          <div class="form-popup__group">
+            <label class="form-popup__label">Маршрут</label>
+
+            <input
+              class="form-popup__input"
+              type="name"
+              placeholder="Укажите откуда - куда доставляли"
+              required
+            />
+          </div>
+          <div class="form-popup__group">
+            <label class="form-popup__label">Имя</label>
+
+            <input
+              class="form-popup__input"
+              type="name"
+              placeholder="Ваше имя"
+              required
+            />
+          </div>
+          <div class="form-popup__group form-popup__group--big">
+            <label class="form-popup__label">Отзыв</label>
+            <textarea
+              class="form-popup__input"
+              placeholder="Текст отзыва"
+            ></textarea>
+          </div>
+        </div>
+
+        <label class="checkbox">
+          <input class="checkbox__input" type="checkbox" checked />
+          <span class="checkbox__box"></span>
+          <span class="checkbox__text">
+            Я принимаю <a href="#">пользовательское соглашение</a> и
+            подтверждаю, что ознакомлен и согласен с
+            <a href="#">политикой конфиденциальности</a> данного сайта
+          </span>
+        </label>
+
+        <button class="form-popup__btn btn" type="button">
+          Заказать звонок
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+    <div class="site-wrapper">
+      <header class="header header--white">
+  <!-- Mobile Menu -->
+  <div class="mobile-menu">
+    <div class="mobile-menu__top">
+      <button
+        class="mobile-menu__close"
+        type="button"
+        aria-label="Закрыть меню"
+      >
+        <svg>
+          <use xlink:href="img/sprite.svg#close"></use>
+        </svg>
+      </button>
+    </div>
+    <div class="mobile-menu__wrapper">
+      <div class="mobile-menu__col">
+        <p class="mobile-menu__name">Компания</p>
+        <ul class="mobile-menu__list">
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="#"><span>Услуги </span></a>
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="#"><span>Автопарк</span></a>
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="#"><span>Отзывы</span></a>
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="#"><span>Контакты</span></a>
+          </li>
+        </ul>
+      </div>
+      <div class="mobile-menu__col">
+        <p class="mobile-menu__name">Услуги</p>
+        <ul class="mobile-menu__list">
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="#"
+              ><span>Попутные грузоперевозки ​ </span></a
+            >
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="#"
+              ><span> Сборные грузоперевозки</span></a
+            >
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="#"><span>Переезды</span></a>
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="#"
+              ><span> Рефрижераторные перевозки</span></a
+            >
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="#">
+              <span> Продовольственные перевозки</span></a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="mobile-menu__right">
+        <div class="mobile-menu__phone" href="#">
+          <a href="tel:+77011234567 ">8-701-123-45-67 </a>
+          <small> горячая линия 24 часа, звонок бесплатный</small>
+        </div>
+
+        <a class="mobile-menu__mail" href="mailto:info@le-trans.kz"
+          >info@le-trans.kz</a
+        >
+
+        <div class="mobile-menu__sosials">
+          <ul class="socials">
+            <li class="socials__item">
+              <a class="socials__link" href="#">
+                <svg>
+                  <use xlink:href="img/sprite.svg#vk"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link" href="#">
+                <svg>
+                  <use xlink:href="img/sprite.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link" href="#">
+                <svg>
+                  <use xlink:href="img/sprite.svg#whatsapp"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link" href="#">
+                <svg>
+                  <use xlink:href="img/sprite.svg#telegram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link" href="#">
+                <svg>
+                  <use xlink:href="img/sprite.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Mobile Menu -->
+
+  <!-- dropdown -->
+  <div class="dropdown" data-target="services-drop">
+    <div class="container">
+      <div class="dropdown__cols">
+        <div class="dropdown__col">
+          <b class="dropdown__name">Переезды</b>
+          <p class="dropdown__text">
+            Заказать квартирный, домашний или офисный переезд
+          </p>
+
+          <div class="dropdown__btns">
+            <a class="dropdown__btn btn btn--white" href="#">
+              Переезды военослужащий
+            </a>
+            <a class="dropdown__btn btn btn--white" href="#">
+              Квартирные, офисные и домашние переезды
+            </a>
+            <a class="dropdown__btn btn btn--white" href="#">
+              Дачные переезды
+            </a>
+          </div>
+        </div>
+        <div class="dropdown__col">
+          <b class="dropdown__name">Перевозки продутов</b>
+          <p class="dropdown__text">
+            Груз с соблюдением санитарных норм и температурного режима
+          </p>
+          <div class="dropdown__btns">
+            <a class="dropdown__btn btn btn--white" href="#">
+              Продовольственные перевозки
+            </a>
+            <a class="dropdown__btn btn btn--white" href="#">
+              Рефрижераторные перевозки
+            </a>
+          </div>
+        </div>
+        <div class="dropdown__col">
+          <b class="dropdown__name">Малый груз</b>
+          <p class="dropdown__text">
+            Сборные грузы экономия на доставке мелких товаров
+          </p>
+
+          <div class="dropdown__btns">
+            <a class="dropdown__btn btn btn--white" href="#">
+              Сборные грузоперевозки
+            </a>
+            <a class="dropdown__btn btn btn--white" href="#">
+              Попутные грузоперевозки
+            </a>
+          </div>
+        </div>
+        <div class="dropdown__col">
+          <b class="dropdown__name">Большой груз</b>
+          <p class="dropdown__text">Груз с первышенным весом или габаритами</p>
+
+          <div class="dropdown__btns">
+            <a class="dropdown__btn btn btn--white" href="#">
+              Негобаритные перевозки
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--  -->
+
+  <div class="header__top">
+    <div class="container">
+      <div class="header__top-inner">
+        <a class="header__logo" href="index.html">
+          <img src="img/logo.png" alt="logo" />
+        </a>
+
+        <button class="header__toggle" type="button" aria-label="Открыть меню">
+          <span class="header__toggle-line"></span>
+        </button>
+
+        <a class="header__calc btn btn--light" href="#">
+          <svg>
+            <use xlink:href="img/sprite.svg#calc"></use>
+          </svg>
+          Узнать стоимость
+        </a>
+
+        <div class="header__item">
+          <b>E-mail: </b>
+          <a href="mailto:info@le-trans.kz">
+            <svg>
+              <use xlink:href="img/sprite.svg#mail"></use>
+            </svg>
+
+            info@le-trans.kz
+          </a>
+        </div>
+
+        <div class="header__item">
+          <b>Бесплатный по Казахстану: </b>
+          <a class="header__phone" href="tel:+77011234567">
+            <svg>
+              <use xlink:href="img/sprite.svg#phone"></use>
+            </svg>
+            8-701-123-45-67
+          </a>
+        </div>
+
+        <button class="header__btn btn btn-call" type="button">
+          ЗАКАЗАТЬ ЗВОНОК
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <nav class="header__bottom">
+    <div class="container">
+      <ul class="menu">
+        <li class="menu__item">
+          <a class="menu__link" href="index.html">Главная</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="services.html" data-target="services-drop"
+            >Услуги</a
+          >
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="transport.html">Автопарк</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#">Отследить груз</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="reviews.html">Отзывы</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="contacts.html">Контакты</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+
+      <main class="main"><section class="services services--page">
+  <div class="container">
+    <div class="services__wrapper">
+      <div class="services__left">
+        <h2 class="services__title">Услуги
+          нашей
+          компании</h2>
+
+        <div class="services__text">
+          <p>
+            Наша организация предлагает нашим клиентам услуги грузовых перевозок
+            по Алматы и по многим другим городам Казахстана.
+          </p>
+          <p>
+            Мы предоставляем нашим клиентам широкий ассортимент услуг по
+            перевозке грузов, куда входят перевозки не только отдельными
+            машинами, но и сборными поставками.
+          </p>
+
+          <p>
+            Среди основных направлений деятельности нашей компании можно
+            выделить: перевозку строительных материалов, квартирные переезды,
+            перевозка пищевой продукции (в том числе замороженной), сложных в
+            транспортировке негабаритных грузов и т.д.
+          </p>
+        </div>
+      </div>
+
+      <ul class="services__list">
+        <li class="services__item">
+          <a class="services-card" href="#">
+            <div class="services-card__img">
+              <img src="img/services/1.jpg" alt="img" />
+            </div>
+            <div class="services-card__inner">
+              <h3 class="services-card__title">авто перевозки</h3>
+              <p class="services-card__text">от 1 тонны до 20 тонн</p>
+            </div>
+          </a>
+        </li>
+        <li class="services__item">
+          <a class="services-card" href="#">
+            <div class="services-card__img">
+              <img src="img/services/2.jpg" alt="img" />
+            </div>
+            <div class="services-card__inner">
+              <h3 class="services-card__title">
+                Сборные <br />
+                грузоперевозки
+              </h3>
+              <p class="services-card__text">от 100 кг до 20 тонн</p>
+            </div>
+          </a>
+        </li>
+        <li class="services__item">
+          <a class="services-card" href="#">
+            <div class="services-card__img">
+              <img src="img/services/3.jpg" alt="img" />
+            </div>
+            <div class="services-card__inner">
+              <h3 class="services-card__title">
+                Квартирные, офисные <br />
+                и домашние переезды
+              </h3>
+              <p class="services-card__text">от 100 кг до 20 тонн</p>
+            </div>
+          </a>
+        </li>
+        <li class="services__item">
+          <a class="services-card" href="#">
+            <div class="services-card__img">
+              <img src="img/services/4.jpg" alt="img" />
+            </div>
+            <div class="services-card__inner">
+              <h3 class="services-card__title">
+                рефрижераторные <br />
+                перевозки
+              </h3>
+              <p class="services-card__text">от 100 кг до 20 тонн</p>
+            </div>
+          </a>
+        </li>
+        <li class="services__item">
+          <a class="services-card" href="#">
+            <div class="services-card__img">
+              <img src="img/services/5.jpg" alt="img" />
+            </div>
+            <div class="services-card__inner">
+              <h3 class="services-card__title">
+                Авиа <br />
+                перевозки
+              </h3>
+              <p class="services-card__text">от 1 до 3 тонн</p>
+            </div>
+          </a>
+        </li>
+        <li class="services__item">
+          <a class="services-card" href="#">
+            <div class="services-card__img">
+              <img src="img/services/6.jpg" alt="img" />
+            </div>
+            <div class="services-card__inner">
+              <h3 class="services-card__title">
+                Международные <br />
+                перевозки
+              </h3>
+              <p class="services-card__text">от 100 кг до 20 тонн</p>
+            </div>
+          </a>
+        </li>
+        <li class="services__item services__item--big">
+          <a class="services-card" href="#">
+            <div class="services-card__img">
+              <img src="img/services/7.jpg" alt="img" />
+            </div>
+            <div class="services-card__inner">
+              <h3 class="services-card__title">
+                негабаритные <br />
+                перевозки
+              </h3>
+              <p class="services-card__text">от 3 тонн и выше</p>
+            </div>
+          </a>
+        </li>
+        <li class="services__item services__item--big">
+          <a class="services-card" href="#">
+            <div class="services-card__img">
+              <img src="img/services/8.jpg" alt="img" />
+            </div>
+            <div class="services-card__inner">
+              <h3 class="services-card__title">
+                Аренда <br />
+                спецтехники
+              </h3>
+              <p class="services-card__text">Краны, самосвалы</p>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+</main>
+      <footer class="footer">
+  <div class="container">
+    <div class="footer__wrapper">
+      <div class="footer__left">
+        <div class="footer__col">
+          <a class="footer__logo" href="#">
+            <img src="img/logo.png" alt="logo" />
+          </a>
+
+          <div class="footer__copy">
+            <div>©2023</div>
+            <div>«Le Trans»</div>
+
+            <div class="mt">
+              <div>Все права защищены</div>
+              <a href="#">Политика конфидициальности</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer__lists">
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="footer__link" href="#">О компании </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Автопарк </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Отзывы </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Контакты </a>
+            </li>
+          </ul>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="footer__link" href="#"> Попутные грузоперевозки </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#"> Сборные грузоперевозки</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#"> Переезды</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#"> Рефрижераторные перевозки</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Продовольственные перевозки​ </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Все услуги </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__right">
+        <div class="footer__contacts">
+          <a class="footer__phone" href="tel:+77011234567">
+            8-701-123-45-67
+            <small>Звонок бесплатный</small>
+          </a>
+
+          <button class="footer__btn btn btn-call" type="button">Заказать ЗВОНОК</button>
+
+          <div class="footer__sosials">
+            <ul class="socials">
+              <li class="socials__item">
+                <a class="socials__link" href="#">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#vk"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials__item">
+                <a class="socials__link" href="#">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials__item">
+                <a class="socials__link" href="#">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#whatsapp"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials__item">
+                <a class="socials__link" href="#">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#telegram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials__item">
+                <a class="socials__link" href="#">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <a class="footer__email" href="mailto:info@le-trans.kz">
+          <svg>
+            <use xlink:href="img/sprite.svg#mail"></use>
+          </svg>
+          <span>info@le-trans.kz</span>
+        </a>
+      </div>
+
+      <div class="footer__copy footer__copy--mobile">
+        <div>©2023</div>
+        <div>«Le Trans»</div>
+
+        <div class="mt">
+          <div>Все права защищены</div>
+          <a href="#">Политика конфидициальности</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    </div>
+
+    <!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- nouislider -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.0/nouislider.min.js"></script>
+
+<!-- jQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- Choices JS -->
+<script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+
+<!-- Input Mask -->
+<script
+  src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js"
+  type="text/javascript"
+></script>
+
+<!-- fancybox -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
+<!-- JS -->
+<script src="js/main.min.js"></script>
+
+  </body>
+</html>
